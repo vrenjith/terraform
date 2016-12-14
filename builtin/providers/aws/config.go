@@ -320,13 +320,8 @@ func (c *Config) ValidateRegion() error {
 		"us-west-1",
 		"us-west-2",
 	}
-
-	for _, valid := range regions {
-		if c.Region == valid {
-			return nil
-		}
-	}
-	return fmt.Errorf("Not a valid region: %s", c.Region)
+	
+	return nil
 }
 
 // Validate credentials early and fail before we do any graph walking.

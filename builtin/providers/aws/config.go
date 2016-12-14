@@ -320,7 +320,7 @@ func (c *Config) ValidateRegion() error {
 		"us-west-1",
 		"us-west-2",
 	}
-	
+
 	return nil
 }
 

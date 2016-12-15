@@ -303,6 +303,7 @@ func (c *Config) Client() (interface{}, error) {
 // ValidateRegion returns an error if the configured region is not a
 // valid aws region and nil otherwise.
 func (c *Config) ValidateRegion() error {
+	//It's kind of unnecessary to validate the region as eventually AWS will validate it
 	return nil
 }
 
